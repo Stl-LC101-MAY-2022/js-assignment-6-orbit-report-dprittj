@@ -1,4 +1,7 @@
+
 export class Satellite {
+	
+	changeColor: boolean;
 
 	name: string;
 	type: string;
@@ -15,7 +18,13 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
-		return true;
+		if (this.type === 'Space Debris'){
+			this.changeColor = true;
+			return true;
+		} else {
+			this.changeColor = false;
+			return false;
+		}
    }
 
 }

@@ -11,6 +11,7 @@ export class AppComponent {
 
   sourceList: Satellite[];
   displayList: Satellite[];
+  changeColor: boolean;
 
 	constructor() {
 		this.sourceList = [];
